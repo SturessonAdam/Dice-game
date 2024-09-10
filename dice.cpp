@@ -10,6 +10,6 @@ void Dice::roll() {
     std::cout << currentValue << std::endl;
 }
 
-void Dice::getValue() {
-
+int Dice::getValue() {
+    return currentValue;
 }

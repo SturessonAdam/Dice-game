@@ -5,11 +5,11 @@
 
 Dice::Dice(int sides, int currentValue) : sides(sides), currentValue(currentValue) {}
 
-void Dice::roll() {
+int Dice::roll() {
+    return
     currentValue=(rand()%sides)+1;
-    std::cout << currentValue << std::endl;
-}
+};
 
 int Dice::getValue() {
     return currentValue;
-}
+};

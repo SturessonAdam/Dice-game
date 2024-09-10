@@ -4,7 +4,7 @@ class Dice {
     public:
     Dice(int sides, int currentValue);
 
-    void roll();
+    int roll();
     int getValue();
 
 

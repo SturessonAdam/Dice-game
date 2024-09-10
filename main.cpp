@@ -15,15 +15,20 @@ int main() {
     std::vector<Dice> diceVector = {Dice(6, 0)};
 
     Player player1("Adam", 0, diceVector);
+    Player player2("Youssef", 0, diceVector);
 
-    int roll = player1.rollDice();
-    std::cout << "First roll with 1 die: " << roll << std::endl;
+   
+    std::cout << "Player 1, first roll with 1 die: " << player1.rollDice() << std::endl;
+    std::cout << "Player 2, first roll with 1 die: " << player2.rollDice() << std::endl;
 
     player1.addDie(6);
+    player2.addDie(6);
 
     player1.rollDice();
+    player2.rollDice();
 
-    std::cout << "Second roll with 2 dice: " << player1.getTotalValue() << std::endl;
+    std::cout << "Player 1, second roll with 2 dice: " << player1.getTotalValue() << std::endl;
+    std::cout << "Player 2, second roll with 2 dice: " << player2.getTotalValue() << std::endl;
 
     player1.increaseScore();
 

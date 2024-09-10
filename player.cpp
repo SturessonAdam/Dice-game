@@ -13,3 +13,7 @@ int Player::rollDice() {
     }
     return totalValue;
 };
+
+void Player::addDie(int sides) {
+    dice.push_back(Dice(sides, 0));
+};

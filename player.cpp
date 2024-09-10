@@ -17,3 +17,21 @@ int Player::rollDice() {
 void Player::addDie(int sides) {
     dice.push_back(Dice(sides, 0));
 };
+
+int Player::getTotalValue() {
+    int totalValue = 0;
+
+    for(auto& die : dice) {
+        totalValue += die.getValue();
+    }
+
+    return totalValue;
+};
+
+int Player::getScore () {
+    return score;
+}
+
+void Player::increaseScore() {
+    score++;
+};

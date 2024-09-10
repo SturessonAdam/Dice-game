@@ -8,7 +8,8 @@ class Player {
     Player(const std::string name, int score, std::vector<Dice> dice);
 
     int rollDice();
-    void getTotalValue();
+    int getTotalValue();
+    int getScore();
     void increaseScore();
     void addDie(int sides);
 

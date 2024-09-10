@@ -17,14 +17,21 @@ int main() {
     Player player1("Adam", 0, diceVector);
 
     int roll = player1.rollDice();
-    std::cout << roll << std::endl;
+    std::cout << "First roll with 1 die: " << roll << std::endl;
 
     player1.addDie(6);
 
-    int roll2 = player1.rollDice();
+    player1.rollDice();
 
-    std::cout << roll2 << std::endl;
+    std::cout << "Second roll with 2 dice: " << player1.getTotalValue() << std::endl;
 
+    player1.increaseScore();
+
+    std::cout << player1.getScore() << std::endl;
+
+    player1.increaseScore();
+
+    std::cout << player1.getScore() << std::endl;
 
     return 0;
 }
